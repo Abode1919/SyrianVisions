@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-ar="أعمالنا - SyrianVisions" data-en="Our Work - SyrianVisions">Our Work - SyrianVisions</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <div class="logo">
+                    <img src="logo.png" alt="SyrianVisions" class="logo-image">
+                </div>
+            </div>
+            
+                <ul class="nav-links" id="navLinks">
+
+                    <li><a href="index.html#contact" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a></li>
+                    <li><a href="aboutUs.html" data-ar="من نحن" data-en="About Us">من نحن</a></li>
+                    <li><a href="PrivacyPolicy.html" data-ar="سياسة الخصوصية" data-en="Privacy Policy" class="active">سياسة الخصوصية</a></li>
+                    <li><a href="work.html" data-ar="أعمالنا" data-en="Our Work">أعمالنا</a></li>
+
+                    
+
+                </ul>
+            
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle">
+                    <span class="lang-option active" data-lang="ar">ع</span>
+                    <span class="lang-option" data-lang="en">EN</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+  <!-- Hero -->
+  <section class="hero" style="padding-top:120px">
+    <div class="hero-content">
+      <h1 class="hero-title" data-ar="أعمالنا — نماذج أولية ومشاريع حيّة" data-en="Our Work — Prototypes & Live Projects">
+        Our Work — Prototypes & Live Projects
+      </h1>
+      <p class="hero-subtitle"
+         data-ar="مجموعة مختارة من النماذج الأولية والتصاميم والمواقع التي قمنا ببنائها لعملائنا."
+         data-en="A curated selection of prototypes, designs, and live sites we’ve built for clients.">
+        A curated selection of prototypes, designs, and live sites we’ve built for clients.
+      </p>
+    </div>
+    <div class="hero-bg"></div>
+  </section>
+
+  <!-- Filters -->
+  <section class="portfolio" id="work">
+    <div class="container">
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all" data-ar="الكل" data-en="All">الكل</button>
+        <button class="filter-btn" data-filter="landing" data-ar="صفحات تعريفية" data-en="Landing">صفحات تعريفية</button>
+        <button class="filter-btn" data-filter="shop" data-ar="متاجر" data-en="Shops">متاجر</button>
+        <button class="filter-btn" data-filter="app" data-ar="لوحات/تطبيقات" data-en="Apps/Dashboards">لوحات/تطبيقات</button>
+      </div>
+
+      <!-- Grid -->
+      <div class="portfolio-grid" id="projectsGrid">
+        <!-- Card 1 -->
+        <article class="portfolio-item" data-category="landing">
+          <div class="portfolio-image">
+            <a class="lightbox" href="work1-large.png">
+              <img src="work1-thumb.png" alt="Restaurant Landing" style="width:100%;height:100%;object-fit:cover;">
+            </a>
+          </div>
+          <div class="portfolio-content">
+            <h3 data-ar="مطعم الأصالة" data-en="Authenticity Restaurant">Authenticity Restaurant</h3>
+            <p data-ar="صفحة تعريفية تعرض القائمة والحجوزات." data-en="Landing page showcasing menu and reservations.">
+              Landing page showcasing menu and reservations.
+            </p>
+            <div class="project-actions">
+              <a class="btn btn-outline" href="https://example.com/demo1" target="_blank" data-ar="مشاهدة الموقع" data-en="View Demo">View Demo</a>
+              <a class="btn btn-secondary" href="https://figma.com/file/xyz" target="_blank" data-ar="فتح النموذج" data-en="Open Prototype">Open Prototype</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="portfolio-item" data-category="shop">
+          <div class="portfolio-image">
+            <a class="lightbox" href="work2-large.png">
+              <img src="work2-thumb.png" alt="Fashion Store" style="width:100%;height:100%;object-fit:cover;">
+            </a>
+          </div>
+          <div class="portfolio-content">
+            <h3 data-ar="متجر الموضة" data-en="Fashion Store">Fashion Store</h3>
+            <p data-ar="متجر إلكتروني ببوابة دفع ولوحة تحكم." data-en="E-commerce with payments and admin dashboard.">
+              E-commerce with payments and admin dashboard.
+            </p>
+            <div class="project-actions">
+              <a class="btn btn-outline" href="https://example.com/demo2" target="_blank" data-ar="مشاهدة الموقع" data-en="View Demo">View Demo</a>
+              <a class="btn btn-secondary" href="https://figma.com/file/abc" target="_blank" data-ar="فتح النموذج" data-en="Open Prototype">Open Prototype</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="portfolio-item" data-category="app">
+          <div class="portfolio-image">
+            <a class="lightbox" href="work3-large.png">
+              <img src="work3-thumb.png" alt="Analytics Dashboard" style="width:100%;height:100%;object-fit:cover;">
+            </a>
+          </div>
+          <div class="portfolio-content">
+            <h3 data-ar="لوحة تحليلات" data-en="Analytics Dashboard">Analytics Dashboard</h3>
+            <p data-ar="واجهة تفاعلية لعرض المؤشرات في الوقت الحقيقي." data-en="Interactive UI with real-time KPIs.">
+              Interactive UI with real-time KPIs.
+            </p>
+            <div class="project-actions">
+              <a class="btn btn-outline" href="https://example.com/demo3" target="_blank" data-ar="مشاهدة الموقع" data-en="View Demo">View Demo</a>
+              <a class="btn btn-secondary" href="https://figma.com/file/def" target="_blank" data-ar="فتح النموذج" data-en="Open Prototype">Open Prototype</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Simple lightbox -->
+  <div id="lightboxModal" class="lightbox-modal" hidden>
+    <button class="lightbox-close" aria-label="Close">×</button>
+    <img id="lightboxImg" alt="">
+  </div>
+
+  <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="logo.png" alt="SyrianVisions" class="logo-image">
+                    </div>
+                    <p data-ar="© 2025 SyrianVisions. جميع الحقوق محفوظة." data-en="© 2025 SyrianVisions. All rights reserved.">© 2025 SyrianVisions. جميع الحقوق محفوظة.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://www.facebook.com/share/14LTGBqAB1a/?mibextid=wwXIfr" class="footer-link">
+                        <i class="fab fa-facebook-f"></i>
+                        <span data-ar="فيسبوك" data-en="Facebook">فيسبوك</span>
+                    </a>
+                    <a href="mailto:support@syrianvisions.com" class="footer-link">
+                        <span>📧</span>
+                        <span data-ar="إيميل" data-en="Email">إيميل</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

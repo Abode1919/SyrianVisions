@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SyrianVisions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="browserIconV1.png">
+
+
+
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <div class="logo">
+                    <img src="logo.png" alt="SyrianVisions" class="logo-image">
+                </div>
+            </div>
+            
+            <ul class="nav-links" id="navLinks">
+
+                <li><a href="#contact" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a></li>
+                <li><a href="aboutUs.html" data-ar="من نحن" data-en="About Us">من نحن</a></li>
+                <li><a href="PrivacyPolicy.html" data-ar="سياسة الخصوصية" data-en="Privacy Policy" class="active">سياسة الخصوصية</a></li>
+                <li><a href="work.html" data-ar="أعمالنا" data-en="Our Work">أعمالنا</a></li>
+
+                
+
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle">
+                    <span class="lang-option active" data-lang="ar">ع</span>
+                    <span class="lang-option" data-lang="en">EN</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title" data-ar="نصمّم موقعك — بسرعة، بجودة، وبسعر مناسب" data-en="We Design Your Website — Fast, Quality, Affordable">
+                نصمّم موقعك — بسرعة، بجودة، وبسعر مناسب
+            </h1>
+            <p class="hero-subtitle" data-ar="نحن متخصصون في تصميم مواقع الويب الاحترافية باللغة العربية مع دعم كامل للغة الإنجليزية. نقدم حلول تقنية متطورة تناسب احتياجات عملك." data-en="We specialize in professional Arabic websites with full English support. We provide advanced technical solutions that fit your business needs.">
+                نحن متخصصون في تصميم مواقع الويب الاحترافية باللغة العربية مع دعم كامل للغة الإنجليزية. نقدم حلول تقنية متطورة تناسب احتياجات عملك.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary" data-ar="ابدأ الآن" data-en="Get Started">ابدأ الآن</a>
+                <a href="#work" class="btn btn-secondary" data-ar="شاهد أمثلة" data-en="See Examples">شاهد أمثلة</a>
+            </div>
+        </div>
+        <div class="hero-bg"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title" data-ar="خدماتنا" data-en="Our Services">خدماتنا</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3 data-ar="مواقع تعريفية للشركات" data-en="Business Landing Pages">مواقع تعريفية للشركات</h3>
+                    <p data-ar="مواقع احترافية تعرض خدماتك ومنتجاتك بطريقة جذابة ومؤثرة" data-en="Professional websites showcasing your services and products attractively">مواقع احترافية تعرض خدماتك ومنتجاتك بطريقة جذابة ومؤثرة</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛒</div>
+                    <h3 data-ar="متاجر إلكترونية" data-en="Online Shops">متاجر إلكترونية</h3>
+                    <p data-ar="منصات تجارة إلكترونية متكاملة مع أنظمة دفع آمنة وإدارة سهلة" data-en="Complete e-commerce platforms with secure payment systems and easy management">منصات تجارة إلكترونية متكاملة مع أنظمة دفع آمنة وإدارة سهلة</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h3 data-ar="استضافة ودعم" data-en="Hosting & Support">استضافة ودعم</h3>
+                    <p data-ar="خدمات استضافة موثوقة مع دعم فني متاح على مدار الساعة" data-en="Reliable hosting services with 24/7 technical support">خدمات استضافة موثوقة مع دعم فني متاح على مدار الساعة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="work" class="portfolio">
+        <div class="container">
+            <h2 class="section-title" data-ar="أعمالنا" data-en="Our Work">أعمالنا</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <span>🍽️</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 data-ar="مطعم الأصالة" data-en="Authenticity Restaurant">مطعم الأصالة</h3>
+                        <p data-ar="موقع مطعم بتصميم أنيق يعرض القائمة والخدمات" data-en="Restaurant website with elegant design showcasing menu and services">موقع مطعم بتصميم أنيق يعرض القائمة والخدمات</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <span>💄</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 data-ar="صالون الجمال" data-en="Beauty Salon">صالون الجمال</h3>
+                        <p data-ar="موقع صالون تجميل مع نظام حجز المواعيد" data-en="Beauty salon website with appointment booking system">موقع صالون تجميل مع نظام حجز المواعيد</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <span>🛍️</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 data-ar="متجر الموضة" data-en="Fashion Store">متجر الموضة</h3>
+                        <p data-ar="متجر إلكتروني متكامل للأزياء والإكسسوارات" data-en="Complete online store for fashion and accessories">متجر إلكتروني متكامل للأزياء والإكسسوارات</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title" data-ar="باقاتنا" data-en="Our Packages">باقاتنا</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 data-ar="باقة البداية" data-en="Starter">باقة البداية</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">120</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li data-ar="موقع من 3 صفحات" data-en="3-page website">موقع من 3 صفحات</li>
+                        <li data-ar="تصميم متجاوب" data-en="Responsive design">تصميم متجاوب</li>
+                        <li data-ar="دعم فني أساسي" data-en="Basic support">دعم فني أساسي</li>
+                        <li data-ar="مراجعة واحدة" data-en="One revision">مراجعة واحدة</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline" data-ar="اطلب الآن" data-en="Order Now">اطلب الآن</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-badge" data-ar="الأكثر طلباً" data-en="Most Popular">الأكثر طلباً</div>
+                    <div class="pricing-header">
+                        <h3 data-ar="باقة الأعمال" data-en="Business">باقة الأعمال</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">220</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li data-ar="موقع من 7 صفحات" data-en="7-page website">موقع من 7 صفحات</li>
+                        <li data-ar="نظام إدارة المحتوى" data-en="CMS system">نظام إدارة المحتوى</li>
+                        <li data-ar="تصميم مخصص" data-en="Custom design">تصميم مخصص</li>
+                        <li data-ar="دعم فني متقدم" data-en="Advanced support">دعم فني متقدم</li>
+                        <li data-ar="3 مراجعات" data-en="3 revisions">3 مراجعات</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary" data-ar="اطلب الآن" data-en="Order Now">اطلب الآن</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 data-ar="المتجر الإلكتروني" data-en="Online Shop">المتجر الإلكتروني</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">420</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li data-ar="متجر إلكتروني كامل" data-en="Complete online store">متجر إلكتروني كامل</li>
+                        <li data-ar="نظام دفع آمن" data-en="Secure payment system">نظام دفع آمن</li>
+                        <li data-ar="لوحة تحكم متقدمة" data-en="Advanced dashboard">لوحة تحكم متقدمة</li>
+                        <li data-ar="دعم فني مميز" data-en="Premium support">دعم فني مميز</li>
+                        <li data-ar="مراجعات غير محدودة" data-en="Unlimited revisions">مراجعات غير محدودة</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline" data-ar="اطلب الآن" data-en="Order Now">اطلب الآن</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h2>
+            <div class="contact-content">
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name" data-ar="الاسم" data-en="Name">الاسم</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email" data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message" data-ar="الرسالة" data-en="Message">الرسالة</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-ar="إرسال الرسالة" data-en="Send Message">إرسال الرسالة</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fab fa-facebook-f"></i>
+                        <div class="contact-details">
+                            <h4 data-ar="فيسبوك" data-en="Facebook">فيسبوك</h4>
+                            <a href="https://www.facebook.com/share/14LTGBqAB1a/?mibextid=wwXIfr">SyrianVisions</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4 data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</h4>
+                            <a href="mailto:support@syrianvisions.com">support@syrianvisions.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="logo.png" alt="SyrianVisions" class="logo-image">
+                    </div>
+                    <p data-ar="© 2025 SyrianVisions. جميع الحقوق محفوظة." data-en="© 2025 SyrianVisions. All rights reserved.">© 2025 SyrianVisions. جميع الحقوق محفوظة.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://www.facebook.com/share/14LTGBqAB1a/?mibextid=wwXIfr" class="footer-link">
+                        <i class="fab fa-facebook-f"></i>
+                        <span data-ar="فيسبوك" data-en="Facebook">فيسبوك</span>
+                    </a>
+                    <a href="mailto:support@syrianvisions.com" class="footer-link">
+                        <span>📧</span>
+                        <span data-ar="إيميل" data-en="Email">إيميل</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
