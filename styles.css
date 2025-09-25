@@ -75,6 +75,25 @@ body {
   height: 40px;
 }
 
+.nav-brand .logo-image {
+  display: block;
+  height: 100%;              /* matchar .logo si høgd */
+  width: auto;               /* bevar proporsjonar */
+  max-width: 180px;          /* tryggleik mot for brei logo */
+  object-fit: contain;
+}
+
+/* Mindre på veldig små skjermar */
+@media (max-width: 480px) {
+  .nav-brand .logo { height: 32px; }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 40px; /* kontroller høgda på logo-containeren */
+}
+
 .logo-image {
   height: 100%;
   width: auto;

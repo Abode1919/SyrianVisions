@@ -1,56 +1,74 @@
+
 // Language Toggle Functionality
-        const langToggle = document.getElementById('langToggle');
-        const html = document.documentElement;
-        let currentLang = 'ar';
+document.addEventListener('DOMContentLoaded', () => {
+  const html = document.documentElement;
+  const langToggle = document.getElementById('langToggle');
 
-        langToggle.addEventListener('click', () => {
-            currentLang = currentLang === 'ar' ? 'en' : 'ar';
-            
-            // Update HTML attributes
-            html.lang = currentLang;
-            html.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
-            
-            // Update toggle button
-            document.querySelectorAll('.lang-option').forEach(option => {
-                option.classList.toggle('active', option.dataset.lang === currentLang);
-            });
-            
-            // Update all text elements
-            document.querySelectorAll('[data-ar][data-en]').forEach(element => {
-                const text = currentLang === 'ar' ? element.dataset.ar : element.dataset.en;
-                if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
-                    element.placeholder = text;
-                } else {
-                    element.textContent = text;
-                }
-            });
-        });
+  // Hent språk frå localStorage eller HTML-attributt
+  let currentLang = localStorage.getItem('lang') || html.getAttribute('lang') || 'ar';
 
-        // Mobile Menu Toggle
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const navLinks = document.getElementById('navLinks');
+  function applyLang(lang) {
+    currentLang = lang;
+    html.lang = lang;
+    html.dir  = (lang === 'ar') ? 'rtl' : 'ltr';
 
-        mobileMenuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            mobileMenuBtn.classList.toggle('active');
-        });
+    // Oppdater toggle
+    document.querySelectorAll('.lang-option').forEach(opt => {
+      opt.classList.toggle('active', opt.dataset.lang === lang);
+    });
 
-        // Smooth Scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                    // Close mobile menu if open
-                    navLinks.classList.remove('active');
-                    mobileMenuBtn.classList.remove('active');
-                }
-            });
-        });
+    // Oppdater all tekst med data-ar/data-en
+    document.querySelectorAll('[data-ar][data-en]').forEach(el => {
+      const text = (lang === 'ar') ? el.dataset.ar : el.dataset.en;
+      if (!text) return;
+
+      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        el.placeholder = text;
+      } else if (el.tagName === 'TITLE') {
+        document.title = text; // støtt dynamisk <title>
+      } else {
+        el.textContent = text;
+      }
+    });
+
+    // Lagre valet – gjeld for alle sider
+    localStorage.setItem('lang', lang);
+  }
+
+  // Kjør ved sideinnlasting
+  applyLang(currentLang);
+
+  // Klikk på språk-knappen
+  if (langToggle) {
+    langToggle.addEventListener('click', () => {
+      applyLang(currentLang === 'ar' ? 'en' : 'ar');
+    });
+  }
+
+  // Mobile Menu Toggle (robust mot manglande element)
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const navLinks = document.getElementById('navLinks');
+  if (mobileMenuBtn && navLinks) {
+    mobileMenuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      mobileMenuBtn.classList.toggle('active');
+    });
+  }
+
+  // Smooth Scrolling
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', (e) => {
+      const target = document.querySelector(anchor.getAttribute('href'));
+      if (!target) return;
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      if (navLinks && mobileMenuBtn) {
+        navLinks.classList.remove('active');
+        mobileMenuBtn.classList.remove('active');
+      }
+    });
+  });
+});
 
         // Form Handling
         document.getElementById('contactForm').addEventListener('submit', function(e) {
