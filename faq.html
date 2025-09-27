@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-ar="الأسئلة المتكررة - SyrianVisions" data-en="FAQ - SyrianVisions">FAQ - SyrianVisions</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="script.js" defer></script>
+  <link rel="icon" type="image/png" href="browserIconV1.png">
+
+
+</head>
+<body>
+<!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <a href="index.html" class="logo" aria-label="Home">
+                    <img src="logo.png" alt="SyrianVisions" class="logo-image">
+                </a>
+            </div>
+            
+                <ul class="nav-links" id="navLinks">
+
+                    <li><a href="index.html#contact" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a></li>
+                    <li><a href="aboutUs.html" data-ar="من نحن" data-en="About Us">من نحن</a></li>
+                    <li><a href="PrivacyPolicy.html" data-ar="سياسة الخصوصية" data-en="Privacy Policy" class="active">سياسة الخصوصية</a></li>
+                    <li><a href="work.html" data-ar="أعمالنا" data-en="Our Work">أعمالنا</a></li>
+                    <li><a href="faq.html" data-ar="الأسئلة المتكررة" data-en="FAQ">الأسئلة المتكررة</a></li>
+
+                    
+
+                </ul>
+            
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle">
+                    <span class="lang-option active" data-lang="ar">ع</span>
+                    <span class="lang-option" data-lang="en">EN</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+
+<section class="hero">
+    <section class="split-section">
+        <div class="hero-content">
+            <h1 class="hero-title" data-ar="الأسئلة المتكررة" data-en="Frequently Asked Questions">
+            الأسئلة المتكررة   
+            </h1>
+            <p class="hero-subtitle" data-ar="ابحث عن إجابات سريعة لأكثر الأسئلة شيوعًا حول خدماتنا." data-en="Find quick answers to the most common questions about our services.">
+                ابحث عن إجابات سريعة لأكثر الأسئلة شيوعًا حول خدماتنا.
+            </p>
+        </div>
+
+        <div class="split-image">
+            <img src="Telecommuting-pana.svg" alt="Abdo Ghosn">
+        </div>
+        <div class="hero-bg"></div>
+    </section>
+</section>
+
+  <!-- ===== Main FAQ Section ===== -->
+  <main class="container faq-section">
+    <div class="faq-actions" style="margin-top:1rem;">
+      <input id="faqSearch" class="faq-search" type="search" placeholder="ابحث..." data-ar="ابحث..." data-en="Search...">
+      <div class="faq-controls">
+        <button id="expandAll" class="btn btn-outline" data-ar="افتح الكل" data-en="Expand all">افتح الكل</button>
+        <button id="collapseAll" class="btn" data-ar="اغلق الكل" data-en="Collapse all">اغلق الكل</button>
+      </div>
+    </div>
+
+    <div id="faqList" class="faq-list">
+      <!-- FAQ item 1 -->
+      <article class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span data-ar="كيف يمكنني طلب موقع؟" data-en="How can I order a website?">كيف يمكنني طلب موقع؟</span>
+          <span class="chev">▾</span>
+        </button>
+        <div class="faq-answer" hidden>
+          <p data-ar="يمكنك التواصل معنا عبر نموذج الاتصال أو عبر الواتساب لمناقشة متطلباتك واستلام عرض سعر." 
+             data-en="You can contact us via the contact form or WhatsApp to discuss requirements and receive a proposal.">
+            يمكنك التواصل معنا عبر نموذج الاتصال أو عبر الواتساب لمناقشة متطلباتك واستلام عرض سعر.
+          </p>
+        </div>
+      </article>
+
+      <!-- FAQ item 2 -->
+      <article class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span data-ar="كم من الوقت تستغرق عملية البناء؟" data-en="How long does it take to build a site?">كم من الوقت تستغرق عملية البناء؟</span>
+          <span class="chev">▾</span>
+        </button>
+        <div class="faq-answer" hidden>
+          <p data-ar="الوقت يعتمد على تعقيد المشروع. عادة من أسبوعين إلى 6 أسابيع للمواقع القياسية." 
+             data-en="Time depends on project complexity. Typically 2–6 weeks for standard sites.">
+            الوقت يعتمد على تعقيد المشروع. عادة من أسبوعين إلى 6 أسابيع للمواقع القياسية.
+          </p>
+        </div>
+      </article>
+
+      <!-- FAQ item 3 -->
+      <article class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span data-ar="هل تقدمون دعم بعد التسليم؟" data-en="Do you provide post-launch support?">هل تقدمون دعم بعد التسليم؟</span>
+          <span class="chev">▾</span>
+        </button>
+        <div class="faq-answer" hidden>
+          <p data-ar="نعم، نقدم خدمات صيانة ودعم يمكن الاتفاق عليها بعد التسليم." 
+             data-en="Yes — we offer maintenance and support packages that can be arranged after delivery.">
+            نعم، نقدم خدمات صيانة ودعم يمكن الاتفاق عليها بعد التسليم.
+          </p>
+        </div>
+      </article>
+
+      <!-- FAQ item 4 -->
+      <article class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span data-ar="ما هي طرق الدفع المتاحة؟" data-en="What payment methods are available?">ما هي طرق الدفع المتاحة؟</span>
+          <span class="chev">▾</span>
+        </button>
+        <div class="faq-answer" hidden>
+          <p data-ar="نقبل الدفع عبر التحويل البنكي، الدفع الإلكتروني أو عبر خدمات محلية حسب الاتفاق." 
+             data-en="We accept bank transfer, online payment gateways, or local payment methods as agreed.">
+            نقبل الدفع عبر التحويل البنكي، الدفع الإلكتروني أو عبر خدمات محلية حسب الاتفاق.
+          </p>
+        </div>
+      </article>
+
+      <!-- Add more FAQ items below as needed -->
+
+            <!-- FAQ item 5 -->
+      <article class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span data-ar="ما هي طرق الدفع المتاحة؟" data-en="What payment methods are available?">ما هي طرق الدفع المتاحة؟</span>
+          <span class="chev">▾</span>
+        </button>
+        <div class="faq-answer" hidden>
+          <p data-ar="نقبل الدفع عبر التحويل البنكي، الدفع الإلكتروني أو عبر خدمات محلية حسب الاتفاق." 
+             data-en="We accept bank transfer, online payment gateways, or local payment methods as agreed.">
+            نقبل الدفع عبر التحويل البنكي، الدفع الإلكتروني أو عبر خدمات محلية حسب الاتفاق.
+          </p>
+        </div>
+      </article>
+
+
+            <!-- FAQ item 6 -->
+      <article class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span data-ar="ما هي طرق الدفع المتاحة؟" data-en="What payment methods are available?">ما هي طرق الدفع المتاحة؟</span>
+          <span class="chev">▾</span>
+        </button>
+        <div class="faq-answer" hidden>
+          <p data-ar="نقبل الدفع عبر التحويل البنكي، الدفع الإلكتروني أو عبر خدمات محلية حسب الاتفاق." 
+             data-en="We accept bank transfer, online payment gateways, or local payment methods as agreed.">
+            نقبل الدفع عبر التحويل البنكي، الدفع الإلكتروني أو عبر خدمات محلية حسب الاتفاق.
+          </p>
+        </div>
+      </article>
+
+            <!-- FAQ item 7 -->
+      <article class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span data-ar="ما هي طرق الدفع المتاحة؟" data-en="What payment methods are available?">ما هي طرق الدفع المتاحة؟</span>
+          <span class="chev">▾</span>
+        </button>
+        <div class="faq-answer" hidden>
+          <p data-ar="نقبل الدفع عبر التحويل البنكي، الدفع الإلكتروني أو عبر خدمات محلية حسب الاتفاق." 
+             data-en="We accept bank transfer, online payment gateways, or local payment methods as agreed.">
+            نقبل الدفع عبر التحويل البنكي، الدفع الإلكتروني أو عبر خدمات محلية حسب الاتفاق.
+          </p>
+        </div>
+      </article>
+
+
+            <!-- FAQ item 8 -->
+      <article class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span data-ar="ما هي طرق الدفع المتاحة؟" data-en="What payment methods are available?">ما هي طرق الدفع المتاحة؟</span>
+          <span class="chev">▾</span>
+        </button>
+        <div class="faq-answer" hidden>
+          <p data-ar="نقبل الدفع عبر التحويل البنكي، الدفع الإلكتروني أو عبر خدمات محلية حسب الاتفاق." 
+             data-en="We accept bank transfer, online payment gateways, or local payment methods as agreed.">
+            نقبل الدفع عبر التحويل البنكي، الدفع الإلكتروني أو عبر خدمات محلية حسب الاتفاق.
+          </p>
+        </div>
+      </article>
+
+
+            <!-- FAQ item 9 -->
+      <article class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span data-ar="ما هي طرق الدفع المتاحة؟" data-en="What payment methods are available?">ما هي طرق الدفع المتاحة؟</span>
+          <span class="chev">▾</span>
+        </button>
+        <div class="faq-answer" hidden>
+          <p data-ar="نقبل الدفع عبر التحويل البنكي، الدفع الإلكتروني أو عبر خدمات محلية حسب الاتفاق." 
+             data-en="We accept bank transfer, online payment gateways, or local payment methods as agreed.">
+            نقبل الدفع عبر التحويل البنكي، الدفع الإلكتروني أو عبر خدمات محلية حسب الاتفاق.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+
+
+<!-- CTA: Start Project -->
+<section class="cta-section">
+  <div class="cta-content">
+    <div class="cta-text">
+      <h2 data-en="Ready to build your website?" data-ar="هل أنت مستعد لبناء موقعك؟">هل أنت مستعد لبناء موقعك؟</h2>
+      <p data-en="Let’s start your project today." 
+         data-ar="لنبدأ مشروعك اليوم.">
+         لنبدأ مشروعك اليوم.
+      </p>
+      <a href="index.html#contact" class="btn btn-primary" 
+         data-en="Start Now" data-ar="ابدأ الآن">ابدأ الآن</a>
+    </div>
+    <div class="cta-image">
+      <img src="contact-us-animate.svg" alt="Start project illustration">
+    </div>
+  </div>
+</section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content" style="padding:2rem 0; display:flex; justify-content:space-between; align-items:center; gap:1rem;">
+        <div>
+          <a href="index.html" class="logo"><img src="logo.png" alt="SyrianVisions" class="logo-image" style="height:36px;"></a>
+          <p data-ar="©2025 SyrianVisions. جميع الحقوق محفوظة." data-en="©2025 SyrianVisions. All rights reserved.">©2025 SyrianVisions. جميع الحقوق محفوظة.</p>
+        </div>
+        </div>
+        <div class="footer-links">
+            <a href="https://www.facebook.com/share/14LTGBqAB1a/?mibextid=wwXIfr" class="footer-link">
+                <i class="fab fa-facebook-f"></i>
+                <span data-ar="فيسبوك" data-en="Facebook">فيسبوك</span>
+            </a>
+            <a href="mailto:support@syrianvisions.com" class="footer-link">
+                <span>📧</span>
+                <span data-ar="إيميل" data-en="Email">إيميل</span>
+            </a>
+        <div>
+          <a href="https://storyset.com/online" target="_blank" rel="noopener" style="color:var(--text-muted); text-decoration:underline; font-size:0.9rem;">
+            <span data-ar="رسوم توضيحية من Storyset" data-en="Illustrations by Storyset">رسوم توضيحية من Storyset</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== Scripts ===== -->
+  <script src="script.js" defer></script>
+
+  <!-- FAQ-specific JS (robust) -->
+  <script>
+  (function () {
+    // Denne koden sørger for at FAQ-funksjonene virker - fungerer også om script.js inkluderer språklogikk.
+    function initFAQ() {
+      const faqList = document.getElementById('faqList');
+      if (!faqList) return;
+
+      // Accordion toggle
+      faqList.querySelectorAll('.faq-question').forEach(btn => {
+        // sørg for button-type for a11y
+        if (!btn.hasAttribute('type')) btn.setAttribute('type','button');
+
+        btn.addEventListener('click', () => {
+          const expanded = btn.getAttribute('aria-expanded') === 'true';
+          btn.setAttribute('aria-expanded', String(!expanded));
+          const answer = btn.nextElementSibling;
+          if (answer) answer.hidden = expanded;
+        });
+      });
+
+      // Expand / Collapse All
+      const expandAll = document.getElementById('expandAll');
+      const collapseAll = document.getElementById('collapseAll');
+      expandAll && expandAll.addEventListener('click', () => {
+        faqList.querySelectorAll('.faq-question').forEach(q => {
+          q.setAttribute('aria-expanded','true');
+          const a = q.nextElementSibling;
+          if (a) a.hidden = false;
+        });
+      });
+      collapseAll && collapseAll.addEventListener('click', () => {
+        faqList.querySelectorAll('.faq-question').forEach(q => {
+          q.setAttribute('aria-expanded','false');
+          const a = q.nextElementSibling;
+          if (a) a.hidden = true;
+        });
+      });
+
+      // Search filter (respekterer aktuell synlig tekst - bruker data-ar/data-en bytte skjer i script.js)
+      const search = document.getElementById('faqSearch');
+      if (search) {
+        search.addEventListener('input', (e) => {
+          const term = String(e.target.value || '').trim().toLowerCase();
+          faqList.querySelectorAll('.faq-item').forEach(item => {
+            const qEl = item.querySelector('.faq-question span');
+            const aEl = item.querySelector('.faq-answer');
+            const q = (qEl ? qEl.textContent : '').toLowerCase();
+            const a = (aEl ? aEl.textContent : '').toLowerCase();
+            const show = !term || q.includes(term) || a.includes(term);
+            item.style.display = show ? '' : 'none';
+          });
+        });
+      }
+
+      console.log('FAQ initialized');
+    }
+
+    // Hvis script.js bruker includeHTML() eller liknande, kjør init når DOM er ferdig
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initFAQ);
+    } else {
+      initFAQ();
+    }
+  })();
+  </script>
+</body>
+</html>

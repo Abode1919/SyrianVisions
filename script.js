@@ -1,4 +1,6 @@
 
+document.addEventListener('DOMContentLoaded', function () {window.setTimeout(document.querySelector('svg').classList.add('animated'),1000);})
+
 // Language Toggle Functionality
 document.addEventListener('DOMContentLoaded', () => {
   const html = document.documentElement;
@@ -166,4 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
   modal.addEventListener('click', e => { if (e.target === modal) closeLightbox(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
 })();
+
+
+
 

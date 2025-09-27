@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SyrianVisions</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="content-structure-styles.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="script.js" defer></script>
@@ -29,6 +31,7 @@
                 <li><a href="aboutUs.html" data-ar="من نحن" data-en="About Us">من نحن</a></li>
                 <li><a href="PrivacyPolicy.html" data-ar="سياسة الخصوصية" data-en="Privacy Policy" class="active">سياسة الخصوصية</a></li>
                 <li><a href="work.html" data-ar="أعمالنا" data-en="Our Work">أعمالنا</a></li>
+                <li><a href="faq.html" data-ar="الأسئلة المتكررة" data-en="FAQ">الأسئلة المتكررة</a></li>
 
             </ul>
             
@@ -47,24 +50,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title" data-ar="نصمّم موقعك — بسرعة، بجودة، وبسعر مناسب" data-en="We Design Your Website — Fast, Quality, Affordable">
-                نصمّم موقعك — بسرعة، بجودة، وبسعر مناسب
-            </h1>
-            <p class="hero-subtitle" data-ar="نحن متخصصون في تصميم مواقع الويب الاحترافية باللغة العربية مع دعم كامل للغة الإنجليزية. نقدم حلول تقنية متطورة تناسب احتياجات عملك." data-en="We specialize in professional Arabic websites with full English support. We provide advanced technical solutions that fit your business needs.">
-                نحن متخصصون في تصميم مواقع الويب الاحترافية باللغة العربية مع دعم كامل للغة الإنجليزية. نقدم حلول تقنية متطورة تناسب احتياجات عملك.
-            </p>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary" data-ar="ابدأ الآن" data-en="Get Started">ابدأ الآن</a>
-                <a href="#work" class="btn btn-secondary" data-ar="شاهد أمثلة" data-en="See Examples">شاهد أمثلة</a>
-            </div>
-        </div>
-
-        <div class="hero-bg"></div>
-    </section> 
-
-
+<section class="hero">
     <section class="split-section">
         <div class="hero-content">
             <h1 class="hero-title" data-ar="نصمّم موقعك — بسرعة، بجودة، وبسعر مناسب" data-en="We Design Your Website — Fast, Quality, Affordable">
@@ -80,10 +66,11 @@
         </div>
 
         <div class="split-image">
-            <img src="Content structure-amico.png" alt="Abdo Ghosn">
+            <img src="content-structure-animate (1).svg" alt="Abdo Ghosn">
         </div>
+        <div class="hero-bg"></div>
     </section>
-
+</section>
     <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
@@ -157,10 +144,11 @@
              متجر إلكتروني متكامل للأزياء والإكسسوارات
           </p>
         </div>
-      </a>
+        </a>
 
-    </div>
+     </div>
   </div>
+
 </section>
 
     <!-- Pricing Section -->
@@ -265,28 +253,31 @@
         </div>
     </section>
 
-  <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="logo">
-                        <img src="logo.png" alt="SyrianVisions" class="logo-image">
-                    </div>
-                    <p data-ar="© 2025 SyrianVisions. جميع الحقوق محفوظة." data-en="© 2025 SyrianVisions. All rights reserved.">© 2025 SyrianVisions. جميع الحقوق محفوظة.</p>
-                </div>
-                <div class="footer-links">
-                    <a href="https://www.facebook.com/share/14LTGBqAB1a/?mibextid=wwXIfr" class="footer-link">
-                        <i class="fab fa-facebook-f"></i>
-                        <span data-ar="فيسبوك" data-en="Facebook">فيسبوك</span>
-                    </a>
-                    <a href="mailto:support@syrianvisions.com" class="footer-link">
-                        <span>📧</span>
-                        <span data-ar="إيميل" data-en="Email">إيميل</span>
-                    </a>
-                </div>
-            </div>
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content" style="padding:2rem 0; display:flex; justify-content:space-between; align-items:center; gap:1rem;">
+        <div>
+          <a href="index.html" class="logo"><img src="logo.png" alt="SyrianVisions" class="logo-image" style="height:36px;"></a>
+          <p data-ar="©2025 SyrianVisions. جميع الحقوق محفوظة." data-en="©2025 SyrianVisions. All rights reserved.">©2025 SyrianVisions. جميع الحقوق محفوظة.</p>
         </div>
-    </footer>
+        </div>
+        <div class="footer-links">
+            <a href="https://www.facebook.com/share/14LTGBqAB1a/?mibextid=wwXIfr" class="footer-link">
+                <i class="fab fa-facebook-f"></i>
+                <span data-ar="فيسبوك" data-en="Facebook">فيسبوك</span>
+            </a>
+            <a href="mailto:support@syrianvisions.com" class="footer-link">
+                <span>📧</span>
+                <span data-ar="إيميل" data-en="Email">إيميل</span>
+            </a>
+        <div>
+          <a href="https://storyset.com/online" target="_blank" rel="noopener" style="color:var(--text-muted); text-decoration:underline; font-size:0.9rem;">
+            <span data-ar="رسوم توضيحية من Storyset" data-en="Illustrations by Storyset">رسوم توضيحية من Storyset</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
